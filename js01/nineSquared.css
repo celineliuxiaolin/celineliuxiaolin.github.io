@@ -1,0 +1,44 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+.nineSquared{
+	overflow: auto;
+	*+height: 1%;
+	padding-bottom: 3%;
+}
+.nineSquared > div{
+	float: left;
+	width: 29.333%;	
+	padding-top: 29.333%;
+	margin: 3% 0 0 3%;
+	background-color: orange;
+	border-radius: 6%;
+}
+button{
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+	border:1px solid orange;
+	background-color: #fff;
+	color:orange;
+	text-align: center;
+	height: 3em;
+	line-height: 3em;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+button:hover{
+	background-color: orange;
+	color:white;
+}
+
+@media (min-width:1024px) {
+	button{font-size: 18px;}
+}
+@media (min-width:768px) {
+	button{font-size: 16px;}
+}
+@media (max-width:768px) {
+	button{font-size: 14px;}
+}
